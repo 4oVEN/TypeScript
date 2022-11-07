@@ -1,5 +1,11 @@
 "use strict";
-let revenue = 1000;
-let bonus = 500;
-let res = revenue + bonus;
-console.log(res);
+function getFullName(userEntity) {
+    return `${userEntity.firstname} ${userEntity.surname}`;
+}
+const user = {
+    firstname: 'Nikita',
+    surname: 'Demidov',
+    city: 'Minsk',
+    age: 33
+};
+console.log(getFullName(user));
